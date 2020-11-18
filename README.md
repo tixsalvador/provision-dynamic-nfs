@@ -80,5 +80,22 @@ spec:
   resources:
     requests:
       storage: 500Mi
-
+```
+Deploy PVC
+```sh
+$  kubectl create -f 4-pvc-nfs.yaml
+```
+Check
+```sh
+$  kubectl get pvc,pv
+```
+Deploy pod to check
+```sh
+$  kubectl create -f 4-busybox-pv-nfs.yaml
+```
+Check
+```sh
+$  kubectl describe pod busybox
+```
+Source:
 - [blog.exxactcorp.com/deploying-dynamic-nfs-provisioning-in-kubernetes](https://blog.exxactcorp.com/deploying-dynamic-nfs-provisioning-in-kubernetes/)
