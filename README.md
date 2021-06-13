@@ -5,7 +5,7 @@ $  kubectl create -f rbac.yaml
 ```
 Check 
 ```sh
-$  kubectl create -f rbac.yamlkubectl get clusterrole,clusterrolebinding,role,rolebinding | grep nfs
+$ kubectl get clusterrole,clusterrolebinding,role,rolebinding | grep nfs
 ```
 Edit class.yaml
 ```sh
