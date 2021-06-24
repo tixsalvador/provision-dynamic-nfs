@@ -23,7 +23,7 @@ spec:
               mountPath: /persistentvolumes
           env:
             - name: PROVISIONER_NAME
-              value: example.com/nfs
+              value: master-deb-k8/nfs
             - name: NFS_SERVER
               value: 10.10.10.10
             - name: NFS_PATH
