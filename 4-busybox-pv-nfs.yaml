@@ -6,7 +6,7 @@ spec:
   volumes:
   - name: host-volume
     persistentVolumeClaim:
-      claimName: pvc1
+      claimName: test-claim
   containers:
   - image: busybox
     name: busybox
