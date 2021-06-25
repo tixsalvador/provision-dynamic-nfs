@@ -3,7 +3,7 @@ Deploy RBAC
 ```sh
 $  kubectl create -f rbac.yaml
 ```
-Check 
+Check
 ```sh
 $ kubectl get clusterrole,clusterrolebinding,role,rolebinding | grep nfs
 ```
@@ -87,7 +87,7 @@ $  kubectl create -f 4-pvc-nfs.yaml
 ```
 Check
 ```sh
-$  kubectl get pvc,pv
+$  kubectl get pvc,pv,pod
 ```
 Deploy pod to check
 ```sh
